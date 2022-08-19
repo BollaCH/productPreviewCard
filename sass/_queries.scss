@@ -1,12 +1,25 @@
-@media (max-width: 50em) {
+@media screen and (max-width: 50em) {
   .card {
     width: 88vw;
     flex-direction: column;
+    &__details {
+      gap: 2rem;
+      padding: 5rem;
+    }
   }
   .card__img {
     width: 100%;
+    &--desktop {
+      display: none;
+    }
+    &--mobile {
+      display: block;
+    }
   }
   .card__details {
     width: 100%;
+  }
+  .btn {
+    padding: 2rem 4rem;
   }
 }
